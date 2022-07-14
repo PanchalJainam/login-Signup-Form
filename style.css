@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 199, 199, 0.948);
+}
+
+.childmain{
+    max-width:60vw;
+    height:80vh;
+    background-color: rgb(245, 248, 248);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+
+.btns{
+    width:60%;
+    margin-top: 25px;
+    background-color: rgba(80, 80, 255, 0.857);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 50px;
+}
+
+.actionbtn{
+    padding: 0.8em;
+    width: 50%;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    color:white;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.movebtn{
+    position: absolute;
+    width: 50%;
+    height: 35px;
+    margin: 3px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    transform:translateX(0);
+    transition: all 0.3 ease-in-out;
+}
+
+.rightbtn{
+    transform:translateX(95%);
+    transition: all 0.3 ease-in-out;
+}
+
+.userform{
+    margin: 15px;
+}
+
+.inputgroup{
+    width:250px;
+    margin:0.8em 0;
+    /* background-color: gainsboro; */
+    border-radius: 50px;
+}
+
+.inputgroup > input{
+    width:100%;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+
+.submitbtn{
+    padding: 0.8em;
+    width:120px;
+    background-color:  gainsboro;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    justify-content: center;
+}
+
+form > button{
+    margin: 0 61px;
+}
+
+.form{
+    display:none;
+}
+
+.signupform{
+    display: block;
+}
+
+.loginform{
+    display: block;
+}
+
+
+/* media query section */
+
+@media (max-width:768px){
+    .childmain{
+        width:80vw;
+    }
+
+    .btns{
+        width:60%;
+    }
+
+    .rightbtn{
+        transform:translateX(95%);
+        transition: all 0.3 ease-in-out;
+    }
+
+    .inputgroup{
+        width:220px;
+        margin: auto;
+        margin-bottom: 0.4em;
+    }
+    .inputgroup > input{
+        width:220px;
+        margin: auto;
+        margin-bottom: 0.4em;
+
+    }
+}
+
+@media (max-width:568px){
+    .btns{
+        width:80%;
+    }
+
+    .rightbtn{
+        transform:translateX(94%);
+        transition: all 0.3 ease-in-out;
+    } 
+}
