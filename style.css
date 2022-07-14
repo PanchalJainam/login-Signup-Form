@@ -17,7 +17,7 @@
 }
 
 .childmain{
-    max-width:60vw;
+    width:50vw;
     height:80vh;
     background-color: rgb(245, 248, 248);
     display: flex;
@@ -25,7 +25,6 @@
     flex-direction: column;
     border-radius: 30px;
 }
-
 
 .btns{
     width:60%;
@@ -62,7 +61,7 @@
 }
 
 .rightbtn{
-    transform:translateX(95%);
+    transform:translateX(97%);
     transition: all 0.3 ease-in-out;
 }
 
@@ -73,7 +72,6 @@
 .inputgroup{
     width:250px;
     margin:0.8em 0;
-    /* background-color: gainsboro; */
     border-radius: 50px;
 }
 
@@ -118,6 +116,7 @@ form > button{
 @media (max-width:768px){
     .childmain{
         width:80vw;
+        height:75vh;
     }
 
     .btns{
@@ -151,4 +150,16 @@ form > button{
         transform:translateX(94%);
         transition: all 0.3 ease-in-out;
     } 
+
+    .inputgroup{
+        width:200px;
+        margin: auto;
+        margin-bottom: 0.2em;
+    }
+    .inputgroup > input{
+        width:200px;
+        margin: auto;
+        margin-bottom: 0.4em;
+
+    }
 }
